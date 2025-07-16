@@ -8,7 +8,7 @@ A seamless full-stack web application to explore and book beautiful lakeside sta
 
 | Link Type   | URL                                                |
 |-------------|----------------------------------------------------|
-| 🌐 Website  | [https://quickstay-lake.vercel.app](https://quickstay-lake.vercel.app) |
+| 🌐 Website  | [https://quickstay-lake.vercel.app](https://quick-stay-full-stack-65yryobc6-siddhant-dwivedis-projects.vercel.app/) |
 
 ---
 
