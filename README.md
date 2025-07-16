@@ -1,110 +1,67 @@
-QuickStay 🏕️
-A platform to explore and book serene lakefront stays in a breeze.
+🏕️ QuickStay
+A seamless full-stack web application to explore and book beautiful lakeside stays.
 
 🔗 Live Demo
-quickstay-lake.vercel.app
+Link Type	URL
+🌐 Website	https://quickstay-lake.vercel.app
 
 🚀 Features
-Browse curated lakeside properties.
+Feature	Description
+🔍 Property Browsing	View available lakeside properties
+🧭 Filtering	Filter stays by price, location, etc.
+✅ Authentication	JWT-based secure login and signup
+📱 Responsive	Mobile-friendly and adaptive UI
+🧾 Booking System	Users can book stays and view them
 
-Filter by price, location, and amenities.
+🧪 Tech Stack
+Layer	Technology
+💻 Frontend	React (Vite), Tailwind CSS, React Router
+⚙️ Backend	Node.js, Express
+🛢️ Database	MongoDB + Mongoose
+🔐 Auth	JSON Web Token (JWT)
+🚀 Deployment	Vercel (frontend), Render/Heroku (backend)
 
-Seamless user experience with responsive design.
+📁 Folder Structure
+Folder	Purpose
+/client	React frontend
+/client/src/components	Reusable UI components
+/client/src/pages	Page-wise components
+/server	Express backend
+/server/controllers	Logic for each route
+/server/routes	API endpoints
+/server/models	MongoDB Schemas
+/server/middleware	JWT, error handlers, etc.
 
-Secure booking flow with form validation.
-
-🧭 Tech Stack
-Client: React (Vite) • React Router • Tailwind CSS
-
-Server: Node.js • Express • MongoDB (Mongoose)
-
-Authentication: JSON Web Tokens (JWT)
-
-Deployment: Vercel (frontend) & Render/Heroku (backend)
-
-📁 Project Structure
-php
-Copy
-Edit
-root/
-├─ client/           # Frontend React application
-│   ├─ public/       # Static assets
-│   └─ src/          # Components, pages, hooks, services
-│
-├─ server/           # Backend API
-│   ├─ controllers/  # Route handlers
-│   ├─ models/       # Mongoose schemas
-│   ├─ routes/       # API endpoints
-│   └─ middleware/   # Auth and error handlers
-│
-├─ .gitignore
-├─ README.md
-└─ package.json      # For backend; client has its own
-🛠️ Installation & Setup
-Clone
-
-bash
-Copy
-Edit
-git clone https://github.com/Yungstunner/QuickStay.git
-cd QuickStay
-Install dependencies
-
-bash
-Copy
-Edit
-cd server
-npm install
-
-cd ../client
-npm install
-Environment variables
-
-In server/.env:
-
-ini
-Copy
-Edit
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
+⚙️ Setup Instructions
+Step	Command
+1️⃣ Clone the Repo	git clone https://github.com/Yungstunner/QuickStay.git
+2️⃣ Backend Setup	cd server && npm install
+3️⃣ Frontend Setup	cd ../client && npm install
+4️⃣ Create .env	Inside /server folder:
+MONGO_URI=...
+JWT_SECRET=...
 PORT=5000
-Run Development Servers
+5️⃣ Run Backend	cd server && npm run dev
+6️⃣ Run Frontend	cd ../client && npm run dev
 
-bash
-Copy
-Edit
-# Server
-cd server
-npm run dev
+🧪 API Overview
+Method	Endpoint	Description
+POST	/auth/register	Create a new user
+POST	/auth/login	Authenticate user & get token
+GET	/properties	Get list of stays (can filter)
+GET	/properties/:id	Get property by ID
+POST	/bookings	Book a stay (auth required)
 
-# Client
-cd ../client
-npm run dev
-Visit the frontend at http://localhost:5173 (or whichever port Vite picks).
+🧑‍💻 Contributing
+Step	Action
+1️⃣ Fork	Click "Fork" on GitHub
+2️⃣ Branch	git checkout -b feature/feature-name
+3️⃣ Commit	git commit -m "Add new feature"
+4️⃣ Push	git push origin feature-name
+5️⃣ PR	Open a Pull Request
 
-🧪 API Endpoints
-POST /auth/register – Sign up
 
-POST /auth/login – Log in (returns JWT)
 
-GET /properties – List stays (query filters supported)
 
-GET /properties/:id – Property details
 
-POST /bookings – Create booking (requires JWT)
-
-📦 See server/routes for full specs and request/response formats.
-
-✅ Contributing
-Thanks for your interest!
-
-Fork the repo
-
-Create a feature branch: git checkout -b feature/your-feature
-
-Commit your changes: git commit -m "Add awesome feature"
-
-Push branch: git push origin feature/your-feature
-
-Open a Pull Request
 
